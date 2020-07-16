@@ -13,8 +13,8 @@
 
             if (window.DeviceOrientationEvent) {
                 window.addEventListener('deviceorientation', function(event) {
-                    //document.getElementById('doeSupported').innerHTML = "EVENT!"
-                    document.getElementById('doeSupported').innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+                    document.getElementById('doeSupported').innerHTML = "EVENT!"
+                    console.log(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
                 });
                 //document.getElementById('doeSupported').innerHTML = "SUPPORTED!";
             } else {
