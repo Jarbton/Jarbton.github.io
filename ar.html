@@ -4,6 +4,10 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
+        <a-assets>
+            <a-asset-item id="engine" src="/assets/models/engine.gltf"></a-asset-item>
+        </a-assets>
+
         <!-- Hiro marker with green box -->
         <a-marker preset='hiro'>
             <a-box position='0 0.5 0' material='color: green;'></a-box>
@@ -11,7 +15,7 @@
 
         <!-- Kanji marker with opaque box -->
         <a-marker preset='kanji'>
-            <a-entity gltf-model-next="src: url(/assets/models/engine.gltf);" scale="0.2 0.2 0.2"></a-entity>
+            <a-gltf-model src="#engine"></a-gltf-model>
         </a-marker>
 
         <!-- Add camera -->
