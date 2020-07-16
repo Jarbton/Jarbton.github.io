@@ -1,25 +1,10 @@
+<!DOCTYPE html>
 <html>
-    <head>
-
-    </head>
     <body>
-        <h1 id="doeSupported"></h1>
-        <script>
-            
-            function deviceOrientationHandler(event) {
-                document.getElementById('doeSupported').innerHTML = event.alpha;
-            }
-
-
-            if (window.DeviceOrientationEvent) {
-                window.addEventListener('deviceorientation', function(event) {
-                    document.getElementById('doeSupported').innerHTML = "EVENT!";
-                    console.log(event);
-                });
-                //document.getElementById('doeSupported').innerHTML = "SUPPORTED!";
-            } else {
-                document.getElementById('doeSupported').innerHTML = "UNSUPPORTED!";
-            }
-        </script>
+        <h1>Jarbton</h1>
+        <ul>
+            <li><a href="ar.html">Augmented Reality Test</a></li>
+            <li><a href="tomtest.html">Tom's Test Stuff</a></li>
+        </ul>
     </body>
 </html>
